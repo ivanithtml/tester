@@ -1,0 +1,97 @@
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Контейнер формы */
+.login-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px; /* Увеличенная ширина контейнера */
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Логотип */
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+/* Форма входа */
+.login-form input {
+    width: 80%;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 0.6rem auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.login-form button {
+    width: 80%;
+    max-width: 300px;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 500px) {
+    .login-container {
+        max-width: 90%;
+        padding: 2rem; /* Уменьшенные отступы для мобильных */
+    }
+
+    .logo img {
+        width: 80px; /* Уменьшенный логотип */
+        height: 80px;
+    }
+
+    .login-form input,
+    .login-form button {
+        width: 100%; /* Полная ширина полей и кнопки */
+        font-size: 1rem;
+    }
+    
+    .login-form input {
+        padding: 0.8rem;
+    }
+    
+    .login-form button {
+        padding: 0.8rem;
+    }
+}

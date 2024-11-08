@@ -1,0 +1,386 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+}
+
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff79c6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ff79c6;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: 808080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: 808080;
+}
+
+.image-container img {
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-menu ul.active {
+        display: flex;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .features {
+        padding: 20px;
+    }
+}
+
+h1, h3 {
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.highlight {
+    color: #bb86fc;
+}
+
+.description {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background: #30363d;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #bb86fc;
+}
+
+header {
+    background: #161b22;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    color: #bb86fc;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #c9d1d9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #bb86fc;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #bb86fc;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        background: #161b22;
+        flex-direction: column;
+        width: 200px;
+        transition: right 0.5s;
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-top: 1px solid #30363d;
+    }
+}
+
+.image-container img {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 50px;
+    color: #bb86fc;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+    color: #b3b3b3;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .image-container img {
+        width: 80%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
